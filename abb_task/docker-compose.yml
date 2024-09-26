@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_API_KEY=${NEXT_PUBLIC_API_KEY}
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_KEY=${NEXT_PUBLIC_API_KEY}
+    env_file:
+      - .env.local

@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-community
+openai
+python-dotenv
+faiss-cpu
+beautifulsoup4
+requests
